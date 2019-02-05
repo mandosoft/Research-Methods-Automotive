@@ -108,6 +108,7 @@ TotalSA <- read.csv("TOTALSA.csv", header = TRUE)
 timeSA <- ts(TotalSA, frequency = 12,  start = c(1976, 1))
 plot(timeSA)
 
+#comment for this version - zr
 
 
 ```
