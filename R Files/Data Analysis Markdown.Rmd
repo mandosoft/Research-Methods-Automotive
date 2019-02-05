@@ -24,78 +24,8 @@ library(readr)
 #### Set Up Work Directory Enviornment ####
 
 
-AISRSA <- read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/AISRSA.csv')
+Car_Sales <- read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/Car%20Sales/Car_sales.csv')
 
-
-
-data <- read_csv("https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/AISRSA.csv")
-#### Import Data ####
-
-# Automobile Inventory Sales Ratio (in ______), Seasonally Adjusted
-aisrsa <- 
-  read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/AISRSA.csv')
-
-# Domestic Automobile Inventories (in _____), Seasonally Adjusted
-auinsa <- 
-  read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/AUINSA.csv')
-
-# Domestic Automobile Production (in _____), Seasonally Adjusted
-daupsa <- 
-  read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/DAUPSA.csv')
-
-# Domestic Automobile Production (in _____), Not DSeasonally Adjusted
-daupnsa <- 
-  read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/DAUPNSA.csv')
-
-# Mexican Automobile Imports (in thousands), Seasonally Adjusted
-mauisa <- 
-  read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/MAUISA.csv')
-
-# Mexican Automobile Imports (in thousands), Not Seasonally Adjusted
-mauinsa <- 
-  read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/MAUINSA.csv')
-
-# Domestic Motor Vehicle Retail Sales ( in ____), Seasonally Adjusted
-mauinsa <- 
-  read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/DAUTOSA.csv')
-  
-# Domestic Motor Vehicle Retail Sales ( in ____), Not Seasonally Adjusted
-dautonsa <- 
-  read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/DAUTONSA.csv')
-
-# Industrial Production Index & Vehicle Parts
-ipd <- 
-  read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/IPD.csv')
-
-# Domestic & Foreign Motor Vehicle Retail Sales (in ____), Not Seasonally Adjusted
-lautonsa  <- 
-  read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/LAUTONSA.csv')
-
-# Motor Vehicle Retail Sales, Foreign Autos (in thousands), Seasonally Adjusted
-fautosa <- 
-  read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/FAUTOSA.csv')
-
-# Motor Vehicle Retail Sales, Foreign Autos (in thousands), Not Seasonally Adjusted
-fautonsa <- 
-  read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/FAUTONSA.csv')
-
-# Retail Sales Used Car Dealers
-mrtss <- 
-  read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/MRTSS.csv')
-
-# Total Industry Car Sales (in ), Seasonally Adjusted
-totalsa <- 
-  read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/TOTALSA.csv')
-
-# Total Industry Car Sales (in ), Not Seasonally Adjusted
-totalnsa <- 
-  read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/TOTALNSA.csv')
-
-# Advance Retail Sales of Vehicle Parts Dealers (in millions)
-rsmvpd <- 
-  read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/RSMVPD.csv')
-
-cbind(aisrsa, auinsa)
 
 
 ```
