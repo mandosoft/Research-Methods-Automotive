@@ -12,6 +12,7 @@ library(devtools)
 library(quantmod)
 library(lubridate)
 library(tidyverse)
+library(readr)
 
 ```
 
@@ -26,7 +27,7 @@ library(tidyverse)
 AISRSA <- read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/AISRSA.csv')
 
 
-library(readr)
+
 data <- read_csv("https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/AISRSA.csv")
 #### Import Data ####
 
