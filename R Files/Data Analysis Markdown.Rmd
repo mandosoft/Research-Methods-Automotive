@@ -112,6 +112,7 @@ Looking first as at plots of Total Industry Car Sales, Seasonally Adjusted:
 timeSA <- ts(totalsa, frequency = 12,  start = c(1976, 1))
 plot(timeSA)
 
+#comment for this version - zr
 
 
 ```
