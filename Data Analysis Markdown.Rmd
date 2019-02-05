@@ -1,0 +1,115 @@
+---
+title: "Data Approach and Methods"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(dplyr)
+library(expss)
+library(devtools)
+library(quantmod)
+library(lubridate)
+library(tidyverse)
+
+```
+
+## Data Approaches for Auto Manufacturing 
+
+```{r data, echo=FALSE}
+#### Nissan Automobile Sales Forecast Model ####
+
+#### Set Up Work Directory Enviornment ####
+
+setwd("~/Nissan/data")
+
+#### Import Data ####
+
+# Automobile Inventory Sales Ratio (in ______), Seasonally Adjusted
+aisrsa = 
+  read.csv("~/Nissan/data/AISRSA.csv")
+
+# Domestic Automobile Inventories (in _____), Seasonally Adjusted
+auinsa =
+  read.csv("~/Nissan/data/AUINSA.csv")
+
+# Domestic Automobile Production (in _____), Seasonally Adjusted
+daupsa = 
+  read.csv("~/Nissan/data/DAUPSA.csv")
+
+# Domestic Automobile Production (in _____), Not DSeasonally Adjusted
+daupnsa = 
+  read.csv("~/Nissan/data/DAUPNSA.csv")
+
+# Mexican Automobile Imports (in thousands), Seasonally Adjusted
+mauisa = 
+  read.csv("~/Nissan/data/MAUISA.csv")
+
+# Mexican Automobile Imports (in thousands), Not Seasonally Adjusted
+mauinsa = 
+  read.csv("~/Nissan/data/MAUINSA.csv")
+
+# Domestic Motor Vehicle Retail Sales ( in ____), Seasonally Adjusted
+mauinsa = 
+  read.csv("~/Nissan/data/DAUTOSA.csv")
+# Domestic Motor Vehicle Retail Sales ( in ____), Not Seasonally Adjusted
+dautonsa = 
+  read.csv("~/Nissan/data/DAUTONSA.csv")
+
+# Industrial Production Index & Vehicle Parts
+ipd = 
+  read.csv("~/Nissan/data/IPD.csv")
+
+# Domestic & Foreign Motor Vehicle Retail Sales (in ____), Not Seasonally Adjusted
+lautonsa  = 
+  read.csv("~/Nissan/data/LAUTONSA.csv")
+
+# Motor Vehicle Retail Sales, Foreign Autos (in thousands), Seasonally Adjusted
+fautosa = 
+  read.csv("~/Nissan/data/FAUTOSA.csv")
+
+# Motor Vehicle Retail Sales, Foreign Autos (in thousands), Not Seasonally Adjusted
+fautonsa= 
+  read.csv("~/Nissan/data/FAUTONSA.csv")
+
+# Retail Sales Used Car Dealers
+mrtss = 
+  read.csv("~/Nissan/data/MRTSS.csv")
+
+# Total Industry Car Sales (in ), Seasonally Adjusted
+totalsa = 
+  read.csv("~/Nissan/data/TOTALSA.csv")
+
+# Total Industry Car Sales (in ), Not Seasonally Adjusted
+totalnsa = 
+  read.csv("~/Nissan/data/TOTALNSA.csv")
+
+# Advance Retail Sales of Vehicle Parts Dealers (in millions)
+rsmvpd = 
+  read.csv("~/Nissan/data/RSMVPD.csv")
+
+cbind(aisrsa, auinsa)
+
+
+```
+
+## Preliminary Time Plots
+
+Looking first as at plots of Total Industry Car Sales, Seasonally Adjusted: 
+
+```{r cars sales, echo=FALSE}
+### Exploratory Analysis ###
+
+TotalSA <- read.csv("TOTALSA.csv", header = TRUE)
+
+## creates time series object from data sets ## see https://otexts.com/fpp2/ts-objects.html
+
+timeSA <- ts(TotalSA, frequency = 12,  start = c(1976, 1))
+plot(timeSA)
+
+
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
