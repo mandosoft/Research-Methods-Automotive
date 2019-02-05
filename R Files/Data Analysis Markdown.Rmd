@@ -23,12 +23,6 @@ library(readr)
 
 #### Set Up Work Directory Enviornment ####
 
-
-AISRSA <- read.csv('https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/AISRSA.csv')
-
-
-
-data <- read_csv("https://raw.githubusercontent.com/ttownsley/Research-Methods-Automotive/master/Data%20Sets/AISRSA.csv")
 #### Import Data ####
 
 # Automobile Inventory Sales Ratio (in ______), Seasonally Adjusted
